@@ -1,5 +1,5 @@
 """
-File: utils_case.py
+File: utils_Brian.py
 
 Purpose: Reusable Module for My Analytics Projects
 
@@ -7,11 +7,7 @@ Description: This module provides a byline for my analytics projects.
 When we work hard to write useful code, we want it to be reusable.
 A good byline could be used in every Python analytics project we do.
 
-Author: Denise Case
-
-TODO: Change the module name in this opening docstring to use your name instead of case. 
-TODO: Change the author in this opening docstring to your name or alias. 
-TODO: Remove these TODOS after you have completed them.
+Author: Brian Johnson
 """
 
 #####################################
@@ -29,47 +25,44 @@ import statistics
 #####################################
 
 # declare a boolean variables (have a value True or False)
-# TODO: Add another boolean variable before this one
+is_door_red: bool = False
 has_international_clients: bool = True
 
 # declare integer variables
-# TODO: Add another integer variable before this one
+numbers_of_doors: int = 5
 years_in_operation: int = 10
 
 # declare a floating point variables
-# TODO: Add another of floating point variable before this one
+average_height_of_doors_inches: float = 80.2
 average_client_satisfaction: float = 4.7
 
 # declare lists of strings
-# TODO: Add another list of strings before this one
+color_of_walls: list = ["red","blue","gray","teal"]
 skills_offered: list = ["Data Analysis", "Machine Learning", "Business Intelligence"]
 
 # declare lists of numbers to illustrate statistics skills
-# TODO: Add another numeric list before this one
+width_of_each_door_inches: list = [62.1,60.0,55.5]
 client_satisfaction_scores: list = [4.8, 4.6, 4.9, 5.0, 4.7]
 
 # Calculate basic statistics using built-in Python functions and the statistics module
-# TODO: REPLACE the variable name, e.g. client_satisfaction_scores with your own numeric list variable name in all 4 lines below:
-min_score: float = min(client_satisfaction_scores)  
-max_score: float = max(client_satisfaction_scores)  
-mean_score: float = statistics.mean(client_satisfaction_scores)  
-stdev_score: float = statistics.stdev(client_satisfaction_scores)
+min_score: float = min(width_of_each_door_inches)  
+max_score: float = max(width_of_each_door_inches)  
+mean_score: float = statistics.mean(width_of_each_door_inches)  
+stdev_score: float = statistics.stdev(width_of_each_door_inches)
 
 # Use a Python formatted string (f-string) to show information
-# TODO: Modify the TEXT in the byline to describe your information
-# TODO: Modify the VARIABLE NAMES in the byline to use your variable names
 byline: str = f"""
 ---------------------------------------------------------
 Stellar Analytics: Delivering Professional Insights
 ---------------------------------------------------------
-Has International Clients:  {has_international_clients}
-Years in Operation:         {years_in_operation}
-Skills Offered:             {skills_offered}
-Client Satisfaction Scores: {client_satisfaction_scores}
-Minimum Satisfaction Score: {min_score}
-Maximum Satisfaction Score: {max_score}
-Mean Satisfaction Score: {mean_score:.2f}
-Standard Deviation of Satisfaction Scores: {stdev_score:.2f}
+Is Door Red:                  {is_door_red}
+Number of Doors:              {numbers_of_doors}
+Color of Walls:               {color_of_walls}
+Width of Each Door in Inches: {width_of_each_door_inches}
+Minimum Width of the Door:    {min_score}
+Maximum Width of the Door:    {max_score}
+Mean Width of the Door:       {mean_score:.2f}
+Standard Deviation of The Width of The Door: {stdev_score:.2f}
 """
 
 #####################################
